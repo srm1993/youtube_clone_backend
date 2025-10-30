@@ -7,7 +7,7 @@ const router=require('./route/router');
 const mongoose=require('mongoose');
 require("dotenv").config();
 const jwt = require("jsonwebtoken");
-mongoose.connect('mongodb://localhost:27017/youtubeDB')
+mongoose.connect('mongodb+srv://soumyaranjan65432:kathakhunta90@cluster0.grybuzc.mongodb.net/youtubeDB')
 .then(()=>console.log('MongoDB Connected Successfully'))
 .catch((err)=>console.log(err))
 app.use(express.urlencoded({extended:false}));
